@@ -2,7 +2,7 @@
 
 ## 1. Installation
 
-`composer require skvn/odnoklassniki`
+`composer require skvn/sociopat`
 
 ## 2. Service Provider
 
