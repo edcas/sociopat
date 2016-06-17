@@ -1,0 +1,33 @@
+{
+    "name": "skvn/sociopat",
+    "description": "Laravel Package extending Laravel Socialite and 3rd party providers for managing social networks actions like login, publish a post, etc.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vitaly Nikolenko",
+            "email": "vit@webstandart.ru"
+        },
+        {
+            "name": "Sergey Kulyamin",
+            "email": "kulyamin_sergey@mail.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": "5.2.*",
+        "jhaoda/socialite-odnoklassniki": "^2.0",
+        "socialiteproviders/vkontakte": "^2.0",
+        "jhaoda/socialite-mailru": "^2.0"
+
+	},
+
+    "autoload": {
+        "psr-4": {
+            "Skvn\\Sociopat\\": "src"
+		}
+    },
+    "post-install-cmd": [
+        "php artisan vendor:publish --provider=\"Skvn\\Sociopat\\SociopatServiceProvider\" "
+
+    ]
+}
