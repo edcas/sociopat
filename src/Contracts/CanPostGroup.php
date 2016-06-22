@@ -2,15 +2,23 @@
 
 namespace Skvn\Sociopat\Contracts;
 
+use Skvn\Sociopat\SociopatException;
+
 interface CanPostGroup
 {
 
 
     /**
-     * Make a post to group
+     * Make a post group or page
      *
-     * @return boolean
+     * @param $title
+     * @param $text
+     * @param $link
+     * @param $attaches
+     *
+     * @return mixed post id
+     *
+     * @throws SociopatException
      */
-
-    public function postGroup();
+    public function publishPostGroup($title, $text, $link='',$attaches=null);
 }

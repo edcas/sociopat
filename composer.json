@@ -17,7 +17,8 @@
         "laravel/framework": "5.2.*",
         "jhaoda/socialite-odnoklassniki": "^2.0",
         "socialiteproviders/vkontakte": "^2.0",
-        "jhaoda/socialite-mailru": "^2.0"
+        "jhaoda/socialite-mailru": "^2.0",
+        "facebook/php-sdk-v4": "^5.2"
 
 	},
 
@@ -25,9 +26,5 @@
         "psr-4": {
             "Skvn\\Sociopat\\": "src"
 		}
-    },
-    "post-install-cmd": [
-        "php artisan vendor:publish --provider=\"Skvn\\Sociopat\\SociopatServiceProvider\" "
-
-    ]
+    }
 }

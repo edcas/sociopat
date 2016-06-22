@@ -15,7 +15,7 @@ class SociopatServiceProvider extends SocialiteServiceProvider
     public function register()
     {
         $this->app->singleton('Laravel\Socialite\Contracts\Factory', function ($app) {
-            return new SociopostManager($app);
+            return new SociopatManager($app);
         });
     }
 

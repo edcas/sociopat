@@ -4,6 +4,10 @@
 
 `composer require skvn/sociopat`
 
+After the package is installed run
+
+`php artisan vendor:publish --provider="Skvn\Sociopat\SociopatServiceProvider"`
+
 ## 2. Service Provider
 
 * If Installed Socialite previously, remove `Laravel\Socialite\SocialiteServiceProvider` from your `providers[]` array in `config\app.php` if you have added it already.
